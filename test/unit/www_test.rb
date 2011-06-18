@@ -7,7 +7,7 @@ class WwwCustominkRedirectTest < HTTPRedirectTest
   should_not_redirect "/"
 
   # legacy lab link
-  should_redirect "/cink/r.jsp?E=ci&F=t", :to => "/lab/"
+  should_redirect "/cink/r.jsp?E=ci&F=t", :to => "/lab/foo"
 
   # lab print locations
   should_redirect "/lab/help/print_locations", :to => "/lab/help/print"
